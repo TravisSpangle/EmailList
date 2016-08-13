@@ -11,6 +11,9 @@ describe EmailList do
     expect(EmailList.uniq(sample_emails).class).to eq(Array)
   end
 
-  # it 'provides a list of uniq emails in the original order it takes them.'
+  it 'provides a list of uniq emails in the original order it takes them.' do
+    expect(EmailList.uniq(sample_emails)).to eq(%w(one@test.com two@test.com three@test.com))
+  end
+
   # it 'processes 100,000 emails, where 50% are duplicated, and unsorted in under 1 second.'
 end

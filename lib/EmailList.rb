@@ -1,5 +1,7 @@
 require "EmailList/version"
 
 module EmailList
-  # Your code goes here...
+  def self.uniq(emails)
+    emails
+  end
 end
